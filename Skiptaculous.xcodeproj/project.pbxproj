@@ -15,6 +15,9 @@
 		259548CA19F5A4AC00F66C91 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 259548C919F5A4AC00F66C91 /* Images.xcassets */; };
 		259548CD19F5A4AC00F66C91 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 259548CB19F5A4AC00F66C91 /* LaunchScreen.xib */; };
 		259548D919F5A4AC00F66C91 /* SkiptaculousTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 259548D819F5A4AC00F66C91 /* SkiptaculousTests.swift */; };
+		259548E319F5AC9C00F66C91 /* UIColorExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 259548E219F5AC9C00F66C91 /* UIColorExtension.swift */; };
+		259548E519F5AE7D00F66C91 /* PlayScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 259548E419F5AE7D00F66C91 /* PlayScene.swift */; };
+		259548E719F5BDAC00F66C91 /* BlockStatus.swift in Sources */ = {isa = PBXBuildFile; fileRef = 259548E619F5BDAC00F66C91 /* BlockStatus.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,6 +43,9 @@
 		259548D219F5A4AC00F66C91 /* SkiptaculousTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SkiptaculousTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		259548D719F5A4AC00F66C91 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		259548D819F5A4AC00F66C91 /* SkiptaculousTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SkiptaculousTests.swift; sourceTree = "<group>"; };
+		259548E219F5AC9C00F66C91 /* UIColorExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIColorExtension.swift; sourceTree = "<group>"; };
+		259548E419F5AE7D00F66C91 /* PlayScene.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlayScene.swift; sourceTree = "<group>"; };
+		259548E619F5BDAC00F66C91 /* BlockStatus.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BlockStatus.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -84,6 +90,9 @@
 				259548BE19F5A4AC00F66C91 /* AppDelegate.swift */,
 				259548C019F5A4AC00F66C91 /* GameScene.sks */,
 				259548C219F5A4AC00F66C91 /* GameScene.swift */,
+				259548E419F5AE7D00F66C91 /* PlayScene.swift */,
+				259548E619F5BDAC00F66C91 /* BlockStatus.swift */,
+				259548E219F5AC9C00F66C91 /* UIColorExtension.swift */,
 				259548C419F5A4AC00F66C91 /* GameViewController.swift */,
 				259548C619F5A4AC00F66C91 /* Main.storyboard */,
 				259548C919F5A4AC00F66C91 /* Images.xcassets */,
@@ -220,8 +229,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				259548C319F5A4AC00F66C91 /* GameScene.swift in Sources */,
+				259548E719F5BDAC00F66C91 /* BlockStatus.swift in Sources */,
+				259548E519F5AE7D00F66C91 /* PlayScene.swift in Sources */,
 				259548C519F5A4AC00F66C91 /* GameViewController.swift in Sources */,
 				259548BF19F5A4AC00F66C91 /* AppDelegate.swift in Sources */,
+				259548E319F5AC9C00F66C91 /* UIColorExtension.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -347,6 +359,7 @@
 				INFOPLIST_FILE = Skiptaculous/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
 		};
@@ -357,6 +370,7 @@
 				INFOPLIST_FILE = Skiptaculous/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
 		};
